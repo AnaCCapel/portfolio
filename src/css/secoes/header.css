@@ -1,19 +1,23 @@
 .header {
-    padding: 30px 15px;
+    margin: 13px;
+    padding: 28px 13px;
+    border-radius: 40px;
+    background: var(--cor-header);
+    box-shadow: 0px 6px 14px rgb(170, 119, 255, 0.5);
 }
 
 .header .logo {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--cor-font);
+    text-decoration: underline;
+    border: 2px solid var(--cor-font);
     font-family: var(--fonte-secundaria);
     font-size: var(--fonte-extra-grande);
-    color: var(--cor-branca);
-    border: 2px solid var(--cor-branca);
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    line-height: 55px;
-    text-align: center;
-    text-decoration: underline;
-    transition: 0.2s;
 }
 
 .header a:hover .logo {
@@ -26,8 +30,6 @@
 }
 
 .header nav li a {
-    text-transform: capitalize;
-    color: var(--cor-branca);
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 20px;
@@ -35,46 +37,49 @@
     border-radius: 50px;
     letter-spacing: 1px;
     user-select: none;
-}
-
-.header nav ul li a:hover{
-    background-color: var(--cor-primaria);;
     color: var(--cor-branca);
+    text-transform: capitalize;
 }
 
-.header .menu{
-    display: none;    
+.header nav ul li a:hover {
+    color: var(--cor-branca);
+    text-decoration-line: underline;
+    background-color: var(--cor-primaria);
+}
+
+.header .menu {
     width: 60px;
-    height: 60px;        
+    height: 60px;
+    display: none;
     align-self: flex-end;
 }
 
-.header nav label{
+.header nav label {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
-  
+
 .header .hamburguer {
-    position: relative;
-    display: block;
-    background-color: var(--cor-branca);
     width: 30px;
     height: 2px;
-    top: 29px;
-    left: 15px;
+    top: 40px;
+    left: 5px;
+    display: block;
+    position: relative;
     transition: 0.5s ease-in-out;
+    background-color: var(--cor-branca);
 }
 
 .header .hamburguer:before,
 .header .hamburguer:after {
-    background-color: var(--cor-branca);
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     transition: 0.2s ease-in-out;
+    background-color: var(--cor-branca);
 }
 
 .header .hamburguer:before {
@@ -89,22 +94,22 @@
     display: none;
 }
 
-.header input:checked ~ label .hamburguer {
+.header input:checked~label .hamburguer {
     transform: rotate(45deg);
 }
 
-.header input:checked ~ label .hamburguer:before {
+.header input:checked~label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-.header input:checked ~ label .hamburguer:after {
+.header input:checked~label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 }
 
 
-@media(max-width: 1280px) { 
+@media(max-width: 1280px) {
     .header {
         padding: var(--mobile-padding);
     }
@@ -112,31 +117,36 @@
 
 @media(max-width: 900px) {
     .header .menu {
-        display: block; 
+        display: block;
     }
 
-    /* pega todos os itens que após o input e que sao irmaos dele */
-    .header nav input:checked ~ ul {
+
+    .header nav input:checked~ul {
         display: block;
     }
 
     .header nav {
         position: absolute;
         top: 30px;
-        right: 20px;  
+        right: 20px;
         z-index: 1;
     }
 
-   .header nav ul {
-        display: none;        
-        background-color: var(--cor-fundo-escuro);         
-        padding: 20px;       
+    .header nav ul {
+        display: none;
+        padding: 13px;
+        border-radius: 13px;
+        background-color: var(--cor-font);
     }
-    
+
     .header nav li a {
-        color: var(--cor-branca);
-        text-align: center;                
-        padding: 20px;
         display: block;
+        padding: 13px;
+        text-align: center;
+        color: var(--cor-branca);
+    }
+
+    .container {
+        margin: 0;
     }
 }
