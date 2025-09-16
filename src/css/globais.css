@@ -24,9 +24,9 @@ body {
 }
 
 .container {
-    max-width: 1140px;
-    margin: auto;
-  }
+  max-width: 1140px;
+  margin: auto;
+}
 
 .section {
   padding: 7rem 0 7rem;
@@ -41,8 +41,8 @@ body {
 
 .section-title h2 {
   font-size: var(--fonte-gigante);
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 700;
+
 }
 
 .botao {
@@ -54,6 +54,5 @@ body {
 }
 
 .botao:hover {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-branca);
+  background: var(--cor-header);
 }

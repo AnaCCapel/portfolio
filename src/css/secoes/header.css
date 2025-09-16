@@ -6,10 +6,10 @@
     box-shadow: 0px 6px 14px rgb(170, 119, 255, 0.5);
 }
 
-.cabecalho {    
+.cabecalho {
     margin: 0 40px;
 }
- 
+
 .header .logo {
     width: 60px;
     height: 60px;
@@ -17,8 +17,8 @@
     line-height: 54px;
     text-align: center;
     border-radius: 50%;
-    color: var(--cor-font);
-    border: 2px solid var(--cor-font);
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
     font-size: var(--fonte-extra-grande);
 }
@@ -139,7 +139,7 @@
         display: none;
         padding: 13px;
         border-radius: 13px;
-        background-color: var(--cor-font);
+        background-color: var(--cor-terciaria);
     }
 
     .header nav li a {

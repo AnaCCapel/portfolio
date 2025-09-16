@@ -1,24 +1,25 @@
-.sobre-mim .imagem-sobre-mim {    
-    width: 40%;
+.sobre-mim .imagem-sobre-mim {
+    width: 30%;
     padding: 0 15px;
-    border-radius: 13px;
-}
-
-.sobre-mim .imagem-sobre-mim .img-box {
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .sobre-mim .imagem-sobre-mim img {
-    border: 10px solid transparent;
-    border-radius: 5px;
+    border-radius: 48px;
+    border: 1.5px solid var(--cor-fundo-claro);
+    box-shadow:
+        0 0 10px var(--cor-terciaria),
+        0 0 20px var(--cor-terciaria),
+        0 0 30px var(--cor-terciaria),
+        0 0 80px var(--cor-terciaria);
 }
 
-.sobre-mim .informacoes-sobre-mim {    
+
+.sobre-mim .informacoes-sobre-mim {
     max-width: 60%;
-    padding: 0 25px;   
-    align-self: center; 
+    padding: 0 25px;
+    margin-left: 13px;
+    align-self: center;
+    text-align: justify;
 }
 
 .sobre-mim .informacoes-sobre-mim .botoes {
@@ -31,36 +32,37 @@
     margin-bottom: 20px;
 }
 
-@media(max-width: 1280px) { 
-    .sobre-mim .row{
+.sobre-mim .informacoes-sobre-mim p strong {
+    text-decoration: underline;
+}
+
+@media(max-width: 1280px) {
+    .sobre-mim .row {
         justify-content: center;
     }
 
-    .sobre-mim .imagem-sobre-mim {        
+    .sobre-mim .imagem-sobre-mim {
         max-width: 100%;
         padding: 0 var(--mobile-padding);
         margin-bottom: 50px;
     }
 
-    .sobre-mim .informacoes-sobre-mim {  
+    .sobre-mim .informacoes-sobre-mim {
         padding: 0 var(--mobile-padding);
         text-align: center;
     }
 
-    .sobre-mim .imagem-sobre-mim .inner-shadow {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-    }
-}
-
-@media(max-width:820px){
-    .sobre-mim .informacoes-sobre-mim {  
-        max-width: 100%;                   
-    }
-    .sobre-mim .imagem-sobre-mim {    
-    width: 80%;
     
-}
+@media(max-width:820px) {
+    .sobre-mim .informacoes-sobre-mim {
+        max-width: 100%;
+        text-align: left;
+    }
 
+    .sobre-mim .imagem-sobre-mim {
+        width: 80%;
+
+    }
+
+} 
 }

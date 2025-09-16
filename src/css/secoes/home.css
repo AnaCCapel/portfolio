@@ -76,7 +76,7 @@
     position: relative;
     font-weight: light;
     letter-spacing: 4px;
-    color: var(--cor-font);
+    color: var(--cor-terciaria);
 }
 
 .btn::before {
