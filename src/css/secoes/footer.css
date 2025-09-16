@@ -3,6 +3,7 @@
     margin-top: 7rem;
     text-align: center;
     background-color: var(--cor-fundo-claro);
+    border-top: 1px solid var(--cor-primaria);
 }
 
 .footer .container {
@@ -10,9 +11,11 @@
 }
 
 .footer h2 {
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-normal);
+    
+    
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 48px;
+    font-size: var(--fonte-normal);
+    font-family: var(--fonte-secundaria);
 }

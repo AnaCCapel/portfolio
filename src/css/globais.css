@@ -56,3 +56,46 @@ body {
 .botao:hover {
   background: var(--cor-header);
 }
+
+.btn {
+  padding: 16px;
+  cursor: pointer;
+  margin-left: 22px;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  font-weight: light;
+  letter-spacing: 4px;
+  color: var(--cor-terciaria);
+}
+
+.btn::before {
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-top: 2px solid #9400FF;
+  border-left: 2px solid #9400FF;
+  transition: ease-in-out 0.3s;
+}
+
+.btn::after {
+  content: '';
+  right: -2px;
+  bottom: -2px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-bottom: 2px solid #9400FF;
+  border-right: 2px solid #9400FF;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  height: 95%;
+  width: 95%;
+  transition: ease-in-out 0.3s;
+}
