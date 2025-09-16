@@ -5,11 +5,11 @@ Este é o meu portfólio pessoal desenvolvido com **HTML5** e **CSS3**, utilizan
 <br>
 
 ### 🖥️ Desktop Design 
- 
+ <img width="1024" height="1921" alt="screencapture-127-0-0-1-5501-index-html-2025-09-15-23_35_59" src="https://github.com/user-attachments/assets/3ad03e44-95b9-46bc-9dd7-7302844f8a7a" />
  <br>
 
 ### 📱 Mobile Design  
-
+<img width="224" height="2010" alt="screencapture-127-0-0-1-5501-index-html-2025-09-15-23_39_54" src="https://github.com/user-attachments/assets/94b6168d-fbda-4f6c-b301-1d16053ddb60" />
 <br>
 
 ## 🛠️ Tecnologias Utilizadas 
